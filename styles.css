@@ -1,0 +1,35 @@
+:root {
+    --myColor: rgb(100, 100, 0);
+    --headerHeight: 60px;
+}
+body {
+    margin: 0;
+}
+article {
+    font-family: cursive;
+    font-size: 20px;
+    text-align: center;
+}
+h1 {
+    color: var(--myColor);
+}
+p {
+    color: var(--myColor);
+}
+input {
+    height: var(--headerHeight);
+    width: var(--headerHeight);
+    margin: none;
+}
+header {
+    top: 0;
+    background-color: orange;
+    height: var(--headerHeight);
+    width: 100%;
+    position: fixed;
+}
+
+main {
+    margin-top: var(--headerHeight);
+}
+
