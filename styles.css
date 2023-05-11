@@ -1,35 +1,43 @@
 :root {
-    --myColor: rgb(100, 100, 0);
-    --headerHeight: 60px;
+    --HeaderHeight: 60px;
+    --HeaderColor: orange;
+}
+html[data-theme="dark"] {
+    --krasa: rgb(104, 104, 104);
+    --MyColor: white;
+    --HeaderColor: black;
+}
+
+html[data-theme="light"] {
+    --krasa: white;
+    --MyColor: black;
+    --HeaderColor: orange;
 }
 body {
     margin: 0;
+    background-color: var(--krasa);
 }
 article {
     font-family: cursive;
     font-size: 20px;
     text-align: center;
 }
-h1 {
-    color: var(--myColor);
-}
-p {
-    color: var(--myColor);
-}
 input {
-    height: var(--headerHeight);
-    width: var(--headerHeight);
     margin: none;
 }
 header {
     top: 0;
-    background-color: orange;
-    height: var(--headerHeight);
+    background-color: var(--HeaderColor);
+    height: var(--HeaderHeight);
     width: 100%;
     position: fixed;
 }
-
 main {
-    margin-top: var(--headerHeight);
+    margin-top: var(--HeaderHeight);
 }
-
+h1 {
+    color: var(--MyColor);
+}
+p {
+    color: var(--MyColor);
+}
